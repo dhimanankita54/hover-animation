@@ -1,0 +1,134 @@
+:root {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+.container {
+  margin: 0;
+  height: 100vh;
+  background-image: url("../../assets/bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.spotlight {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 1);
+  mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent -80px,
+    black 150px
+  );
+  -webkit-mask: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    transparent -80px,
+    black 150px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* height: 100%;
+  width: 100%;
+  background-image: radial-gradient(
+    circle,
+    transparent 50%,
+    rgba(0, 0, 0) 50%
+  ); */
+}
+
+.neon {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(200%);
+  background-color: black;
+}
+
+.text {
+  color: white;
+  font-size: 120px;
+  font-weight: bold;
+  font-family: "Krona One", sans-serif;
+  position: relative;
+  user-select: none;  
+  /* opacity: 0; */
+  animation: show 1.5s ease;
+  animation-iteration-count: 3;
+  letter-spacing: 30px;
+}
+
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  filter: blur(0.02em);
+  mix-blend-mode: difference;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(
+    /* 90deg,
+    #0094ff,
+    #1e6496,
+    #042b47,
+    #0e2637,
+    #0b161e */
+      92deg,
+    #0094ff -4.36%,
+    #00ffd1 109.82%
+  );
+  filter: blur(27px);
+  border-radius: 130px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+
+.spotlights {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  /* background: radial-gradient(circle, white, transparent 25%) center / 25% 25%,
+    radial-gradient(circle, white, black 25%) center / 12.5% 12.5%; */
+  background-image: radial-gradient(
+    circle,
+    transparent -50%,
+    rgba(0, 0, 0) 100%
+  );
+  animation: light 0.5s linear infinite;
+  mix-blend-mode: multiply;
+}
+
+@keyframes light {
+  from {
+    transform: translate(0%, 0%);
+  }
+  /* to{
+    transform: translate(100%, 50%);
+  } */
+  50% {
+    transform: translate(50%, 50%);
+  }
+  100% {
+    transform: translate(50%, 0%);
+  }
+}
+
+@keyframes show {
+  90% {
+    opacity: 0.1;
+    /* transform: translate(0%, 0%); */
+  }
+  100%{
+    opacity: 0;
+  }
+  /* to{
+    transform: translate(100%, 50%);
+  } */
+}

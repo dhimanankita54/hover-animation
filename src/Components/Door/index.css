@@ -1,0 +1,18 @@
+#reflected-box::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(186, 186, 186, 0) 0%, #d3d3d3 100%);
+  width: inherit;
+  z-index: 1;
+  min-height: 21%;
+  position: absolute;
+  bottom: -21%;
+  left: 0;
+  transform: scaleY(-1);
+}
+
+.box {
+  background-color: black;
+}
+
+
+
