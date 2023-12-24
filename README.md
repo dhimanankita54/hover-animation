@@ -2,7 +2,7 @@
 
 ## DEMO GIF
 
-![](https://github.com/dhimanankita54/circular-slider/blob/main/src/planet-carousel.gif)
+![](https://github.com/dhimanankita54/hover-animation/blob/main/src/assets/animation.gif)
 
 ## Available Scripts
 
