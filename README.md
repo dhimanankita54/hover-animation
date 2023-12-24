@@ -1,4 +1,4 @@
-# Circular slider with animations
+# Hover animations with tsparticles and framer-motion
 
 ## DEMO GIF
 
