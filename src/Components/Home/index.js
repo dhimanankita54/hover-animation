@@ -43,7 +43,7 @@ export const EnterHome = () => {
           }}
         >
           <source
-            src="https://drive.google.com/uc?export=download&id=1pd78nHJLfWahjKWwcI7_8QW2OW6vwoTg"
+            src="https://drive.google.com/file/d/1pd78nHJLfWahjKWwcI7_8QW2OW6vwoTg/preview"
             type="video/mp4"
           />
         </video>
