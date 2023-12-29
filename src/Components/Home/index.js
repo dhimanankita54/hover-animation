@@ -13,26 +13,11 @@ export const EnterHome = () => {
           position: "relative",
         }}
       >
-        <iframe
-          src="https://drive.google.com/file/d/1pd78nHJLfWahjKWwcI7_8QW2OW6vwoTg/preview"
-          width="100%"
-          height="100%"
-          allow="autoplay"
-          style={{
-            position: "absolute",
-            top: 0,
-            bottom: 0,
-            left: 0,
-            right: 0,
-            objectFit: "cover",
-          }}
-        ></iframe> 
-        // <video
-        //   autoPlay
-        //   loop
-        //   muted
+        // <iframe
+        //   src="https://drive.google.com/file/d/1pd78nHJLfWahjKWwcI7_8QW2OW6vwoTg/preview"
         //   width="100%"
         //   height="100%"
+        //   allow="autoplay"
         //   style={{
         //     position: "absolute",
         //     top: 0,
@@ -41,12 +26,27 @@ export const EnterHome = () => {
         //     right: 0,
         //     objectFit: "cover",
         //   }}
-        // >
-        //   <source
-        //     src="https://drive.google.com/file/d/1pd78nHJLfWahjKWwcI7_8QW2OW6vwoTg/preview"
-        //     type="video/mp4"
-        //   />
-        // </video>
+        // ></iframe> 
+        <video
+          autoPlay
+          loop
+          muted
+          width="100%"
+          height="100%"
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+            objectFit: "cover",
+          }}
+        >
+          <source
+            src="https://drive.google.com/uc?export=preview&id=1pd78nHJLfWahjKWwcI7_8QW2OW6vwoTg"
+            type="video/mp4"
+          />
+        </video>
 
         <Box display="flex" justifyContent="flex-end" sx={{ zIndex: 4 }}>
           <Button
